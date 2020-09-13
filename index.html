@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TopDev - Việc Làm IT Hàng Đầu</title>
+        <meta charset="utf-8">
+        <link href="/CSS/style.css" rel="stylesheet"/>
+        <link href="images/favicon.ico" rel="shortcut icon"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($){function detectmob(){if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){return true;}else{return false;}}var t={delay: 125, overlay: $(".fb-overlay"), widget: $(".fb-widget"), button: $(".fb-button")}; setTimeout(function(){$("div.fb-livechat").fadeIn()}, 8 * t.delay); if(!detectmob()){$(".ctrlq").on("click", function(e){e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({bottom: 0, opacity: 0}, 2 * t.delay, function(){$(this).hide("slow"), t.button.show()})) : t.button.fadeOut("medium", function(){t.widget.stop().show().animate({bottom: "30px", opacity: 1}, 2 * t.delay), t.overlay.fadeIn(t.delay)})})}});
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#gototop").hide()
+                $(window).scroll(function() {
+                    var t = $(this).scrollTop()
+                    if (t >= 100)
+                        $("#gototop").show(500)
+                    else
+                        $("#gototop").hide(500)
+                });
+            
+                $("#gototop").click(function(){
+                    $('html, body').animate({
+                        'scrollTop': 0
+                    }, 1000)
+                })
+
+                $(document).ready(function() {
+                var aboveHeight = $(header).outerHeight();
+                $(window).scroll(function(){
+                if ($(window).scrollTop() > aboveHeight){
+                $("#sticknav").addClass(fixed).css(top,0).next().css(padding-top,60);
+                } else {
+                $("#sticknav").removeClass(fixed).next().css(padding-top,0);
+                           }
+                });
+
+            });
+                pos = $("#menuTop").position(); 
+                $(window).scroll(function() {
+                    var posScroll= $(document).scrollTop();
+                    if(parseInt(posScroll) > parseInt(pos.top)){
+                        $("#menuTop").addClass('fixed');
+                    }else {
+                        $("#menuTop").removeClass('fixed');
+                    }
+                });
+
+
+        });
+        </script>
+    </head>
+    <header>
+        
+
+        <div class="container">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="/images/top.png"/>Việc làm IT hàng đầu</a>
+            </div>
+            <div class="more-icon">
+                <ul class="top">
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-phone-square"></i>
+                                <p>0367884444</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-book"></i>
+                                <p>Thông Tin</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-briefcase"></i>
+                                <p>Đăng tuyển</p>
+                        </div>
+                    </li>
+                    <li> 
+                        <a href="#">
+                            <span>Đăng nhập</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <body>
+
+        <div class="gototop" id="gototop">
+            <a href="javascript:;" onclick="gototop()">^</a>
+        </div>
+
+        <div class="myHeader" id="menuTop">
+          <ul class="menu">
+            <li><a href="http://127.0.0.1:5500/index.html">Trang Chủ</a></li>
+                    <li><a href="http://127.0.0.1:5500/index1.html" target="_blank">Tìm việc IT</a></li>
+                    <li><a href="#">Sự Kiện</a>
+                        <ul class="submenu">
+                            <li><a href="https://mobileday.vn/" target="_blank">VietNam Mobile Day</a></li>
+                            <li><a href="https://vietnamwebsummit.com/vi/trang-chu/" target="_blank">VietNam Web Submit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/index3.html" target="_blank">Cuộc sống IT</a></li>
+                    <li><a href="http://127.0.0.1:5500/index4.html" target="_blank">Tạo CV</a></li>
+                    <li><a href="http://127.0.0.1:5500/index5.html" target="_blank">Liên hệ</a></li>
+            </ul>
+        </div>
+        <section style="width: 80%; margin: auto;" >
+            <div class="Box">
+                <div class="Search">
+                    <div class="content">
+                        <table style="width: 100%">
+                            <td style="width: 60%">
+                                <input style="width: 90%; height: 25px;" type="text" placeholder="Nhập từ khóa tìm kiếm"/>
+                                <td style="width: 25%">
+                                    <select style="width: 90%; height: 25px;">
+                                        <option>Tất cả địa điểm</option>
+                                        <option>Hồ Chí Minh</option>
+                                        <option>Hà Nội</option>
+                                        <option>Đà Nẵng</option>
+                                    </select>
+                                    <td style="width: 10%">
+                                        <input style="width:90%; height: 25px;" type="button" value="Tìm Kiếm"/>
+                                    </td>
+                                </td>
+                            </td>
+                       </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main">
+            <div class="left">
+                <p>CÔNG TY NỔI BẬT</p>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                  
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images2/travel 2.jpg" alt="Los Angeles">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/seoul.png" alt="Chicago">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images2/sile3.jpg" alt="New York">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  
+                </div>
+            </div>
+            <div class="right">CÔNG VIỆC HOT HÔM NAY
+                <div class="contain">
+                    <img src="images2/travel.png">
+                    <a href="https://topdev.vn/nha-tuyen-dung/travel2pay-2-83840" target="_blank">TRAVEL 2 PAY</a>
+                    <p>Travel and Pay Software Solutions is a subsidiary and 
+                        development center of ITELYA GmbH & CO. KG, a German company.</p>
+                </div>
+                <div class="contain">
+                    <img src="images3/cybozu.jpg">
+                    <a href="https://topdev.vn/nha-tuyen-dung/cybozu-vietnam-2-64832" target="_blank">CYBOZU VIETNAM</a>
+                    <p>Cybozu Vietnam was founded in 2009 and now it is developing
+                         to be an important development branch of Cybozu, Inc.</p>
+                </div>
+                <div class="contain">
+                    <img src="images2/momo2.png">
+                    <a href="https://topdev.vn/nha-tuyen-dung/momo-2-82545" target="_blank">MOMO</a>
+                    <p>With the belief that financial services and payment will contribute 
+                    to changing Vietnamese lives and increasing their income, the company has... </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main2">
+            <p>CÁC CÔNG TY PHỔ BIẾN</p>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="/images/T_Y.png">
+                        <h5>C++ Engineer</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Current projects include the followings but not limited to:
+                            Image measuring software for biological research instrument
+                            Maintenance and test of various embedded softwares for biological diagnostic instruments.</p>
+                            <a href="https://topdev.vn/viec-lam/c-software-engineer-cong-ty-tnhh-dich-vu-t-y-2017461"target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/aladin.jpg">
+                        <h5>Back-end Developer</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Aladin is a mobile marketplace for secondhand goods serving Vietnam market. Aladin is created by
+                         a team of passionate developers and designer and aimed to be the #1 secondhand marketplace in Vietnam.</p>
+                            <a href="https://topdev.vn/viec-lam/back-end-nodejs-java-developer-tfl-group-2-2016253"target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/VDC.png">
+                        <h5>QA Engineer</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>We're seeking a 'hands-on' Senior/ Lead Quality Assurance Engineer to build quality testing practices and mindset across our Agile engineering teams in Vietnam.
+                             Our quality strategy is two-fold, quality through high coverage...</p>
+                            <a href="https://topdev.vn/viec-lam/senior-lead-qa-engineer-automation-testing-vdc-in-partnership-with-pycogroup-3-2017511"target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/W.png">
+                        <h5>Mobile Developer</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Xây dựng app (React Native) cho công ty.
+                            Hỗ trợ bảo trì hệ thống website đang hoạt động của công ty theo yêu cầu.
+                            Hỗ trợ xây dựng giao diện application app mobile (React Native) từ Figma, Zeplin, PSD Photoshop.</p>
+                            <a href="https://topdev.vn/viec-lam/mobile-developer-react-native-waodate-2-2017656"target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/DELI.png">
+                        <h5>Front-end Developer</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Are you looking to be more than just an ordinary coder? Do you have what it takes to see where you can improve the lives of others 
+                            through making great mobile and web products to solve issues and improve life?
+                        </p>
+                            <a href="https://topdev.vn/viec-lam/front-end-developer-reactjs-cong-ty-co-phan-deliveree-viet-nam-2-2017265"target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/Logo-remove.png">
+                        <h5>SENIOR UX/UI</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Join discussion and contribute for new features with your UI/UX expertise
+                            Design beautiful and usable world-class web and mobile applications
+                            Identify potential UX problems & find solutions,..</p>
+                            <a href="https://topdev.vn/viec-lam/senior-ux-ui-designer-vn-digital-asset-investment-2017582"target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/AXON.png">
+                        <h5>Front-end Core</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>As a Senior software engineer on the Front-end Core team, you'll be responsible 
+                        for building and maintaining the core frontend tools and framework used by every product
+                         team at Axon.</p>
+                            <a href="https://topdev.vn/viec-lam/senior-front-end-software-engineer-front-end-core-axon-2-2017506" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="images3/YMESE.png">
+                        <h5>Senior Full-stack PHP</h5>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Plan, develop, test and maintain major features for our main plugins and extensions 
+                            Review, optimize, and refactor existing codes with other team members
+                            Troubleshoot customer’s reported bugs</p>
+                            <a href="https://topdev.vn/viec-lam/senior-full-stack-php-developer-ymese-2-2012995" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main3">
+            <p>CÁC CÔNG TY HÀNG ĐẦU</p>
+            <div class="hinh">
+                <a href="https://topdev.vn/viec-lam/senior-back-end-developer-sg-fintech-2-2017225" target="_blank"><img src="images3/L.png"></a>
+            </div>
+            <div class="hinh">
+                <a href="https://topdev.vn/nha-tuyen-dung/mobio-2-71000" target="_blank"><img src="images3/MOBIO.png"></a>
+            </div>
+            <div class="hinh">
+                <a href="https://topdev.vn/nha-tuyen-dung/dallmeier-2-67590" target="_blank"><img src="images3/IOS.jpg"></a>
+            </div>
+            <div class="hinh">
+                <a href="https://topdev.vn/nha-tuyen-dung/viettel-big-data-analytics-center-83607" target="_blank"><img src="images3/VIETTEL.png"></a>
+            </div>
+            <div class="hinh">
+                <a href="https://topdev.vn/nha-tuyen-dung/tomosia-viet-nam-2-83930" target="_blank"><img src="images3/TOMOSIA.png"></a>
+            </div>
+        </div>
+
+        <div class="muc">CÔNG TY IT</div>
+        <div class="main4">
+            <div class="left2">
+                <img src="images2/job1.png">
+            </div>
+            <div class="right2">
+                <div>Ứng tuyển các công việc IT với phúc lợi xứng tầm ngay !</div>
+                <a href="http://127.0.0.1:5500/index1.html">Ứng Tuyển</a>
+            </div>
+        </div>
+
+        <div class="main5">
+            <p>CÔNG VIỆC MỚI NHẤT</p>
+            <div class="left3">
+                <div class="new">
+                    <img src="images3/CH APP.png">
+                    <a href="https://topdev.vn/viec-lam/mobile-developer-react-native-ch-app-2-2017129" target="_blank"> 
+                        Mobile Developer (React Native)</a>
+                    <p>Thiết kế và xây dựng các ứng dụng iOS/Android dựa trên bản thiết kế của bên design 
+                        và bản mô tả chức năng của khách hàng
+                        Phối hợp với nhóm để xác định yêu cầu, thiết kế và chức năng cho các dự án mobile
+                        Xây dựng các chức năng hệ thống thông qua API
+                    </p>
+                </div>
+
+                    <div class="new">
+                        <img src="images3/SONCA.png">
+                        <a href="https://topdev.vn/viec-lam/technology-manager-sonca-tech-corp-2017666" target="_blank">
+                            Technology Manager</a>
+                        <p>Làm việc sát sao với các đơn vị outsourcing: hardware, mobile app, web programming, 
+                            cloud server,…
+                            Tiếp tục hoàn thiện từ version đã hoàn chỉnh từ các đơn vị outsourcing
+                             (hoàn toàn tại Việt Nam), bao gồm: mobile app front end and back end, 
+                             hardware embedded firmware, back-end server,….
+                        </p>
+                    </div>
+
+                    <div class="new">
+                        <img src="images3/MT.jpg">
+                        <a href="https://topdev.vn/viec-lam/senior-php-developer-up-to-2-500-mti-technology-2017234" target="_blank">
+                            Senior PHP Developer - Up to $2,500</a>
+                        <p>MTI Technology specializes in creating smart mobile content and services that 
+                            transform and transcend customers' lives. We design and develop our products 
+                            using agile methods bringing the best deliverable results to the table in the shortest
+                             amount of time.
+                        </p>
+                        </div>
+                        <div class="new">
+                            <img src="images3/AIA.png">
+                            <a href="https://topdev.vn/viec-lam/agile-coach-aia-vietnam-2-2017229" target="_blank">
+                                Agile Coach</a>
+                            <p>
+                                Developing coherent ways of working across teams and organizational levels
+                                Coaching all levels of the organization towards agility mindsets and behaviors
+                                Focused on coaching towards measurable business and customer outcomes
+                                Capability building towards new ways of workings to enhance organizational agile maturity 
+                            </p>
+                    </div>
+                    <div class="new">
+                        <img src="images3/MINEVA.png">
+                        <a href="https://topdev.vn/viec-lam/senior-ui-ux-designer-minerva-technology-solutions-jsc-2-2017219" target="_blank">
+                            Senior UI/UX Designer</a>
+                        <p>Làm việc chặt chẽ với các đội sản phẩm và kinh doanh để thu thập các yêu cầu để đổi mới và cung cấp thiết kế sản phẩm.
+                            Đưa ra các giải pháp & ý tưởng trực quan đáp ứng nhu cầu của các nhóm sản phẩm kinh doanh dựa theo quan điểm thiết kế, kinh doanh…
+                        </p>
+                </div>
+
+
+            </div>
+            <div class="right3">
+                <div class="new">
+                    <img src="images/momo.png">
+                    <a href="https://topdev.vn/viec-lam/senior-business-analyst-momo-2-2012926" target="_blank">
+                        SENIOR BUSINESS ANALYST</a>
+                    <p>Formulates and defines system scope and objectives through research and fact-finding
+                         combined with an understanding of applicable business systems and industry requirements.
+                        Devises or modifies procedures to solve complex problems considering computer equipment capacity 
+                        and limitations, operation time and form of desired results.
+                    </p>
+                    </div>
+                    <div class="new">
+                        <img src="images3/TECOTEC.png">
+                        <a href="https://topdev.vn/viec-lam/l-p-tr-nh-vi-n-web-net-application-c-ng-ty-c-ph-n-tecotec-c-ng-ngh-2-2017139" target="_blank">
+                            LẬP TRÌNH VIÊN WEB .NET APPLICATION</a>
+                        <p>Có từ 1 năm kinh nghiệm làm việc với  .NET, C#, ASP.NET MVC, Entity Framework
+                            Có hiểu biết về các nền tảng: HTML, CSS, Bootstrap, Javascript, Bootstrap, jQuery, LINQ
+                            Sử dụng tốt hệ quản trị CSDL Sql Server
+                            Có kinh nghiệm làm việc trong các dự án theo mô hình Agile là một lợi thế.
+                        </p>
+                        </div>
+                    <div class="new">
+                            <img src="images3/MEDIHUB.png">
+                            <a href="https://topdev.vn/viec-lam/back-end-developer-medihub-2-2017583" target="_blank">
+                                Back-end Developer</a>
+                            <p>Phát triển hệ thống backend, api từ Opensource NopCommerce cho ứng dụng Mobile & Web application
+                                Phát triển công cụ quản lý backend
+                                Nghiên cứu giải pháp, công nghệ mới áp dụng vào dự án
+                                Tối ưu hóa các hệ thống backend.
+                            </p>
+                    </div>
+                    <div class="new">
+                        <img src="images3/OLLI.png">
+                        <a href="https://topdev.vn/viec-lam/fresher-qc-cong-ty-co-phan-cong-nghe-olli-2-2017255" target="_blank">
+                            Fresher QC</a>
+                        <p>Develop Testcases and Execute Test for Mobile App and AI features (will be guided and trained)
+                            Prepare and Maintain Test Documents (under QC Leader’s guideline)
+                            Create Test Report and flexibly report to Leader(s)
+                            Assist to build up Testing processes
+                            Coordinate with other teams in company
+                        </p>
+                </div>
+                <div class="new">
+                    <img src="images3/IT SOLUTIONS.jpg">
+                    <a href="https://topdev.vn/viec-lam/front-end-developer-vuejs-bootstrap4-f-b-it-solutions-corporation-company-fbis-2-2013008" target="_blank">
+                        Front-end Developer (VueJS, Bootstrap4)</a>
+                    <p>Design and implement front-end code of web and cross-platform applications with VueJS, Typescript, HTML, CSS, Javascript, Bootstrap 4.
+                        Propose and develop high-quality features to increase speed, scale and usability.
+                        Optimize your website/web, app/app to get maximum speed.
+                    </p>
+            </div>
+            </div>
+
+        </div>
+        <div class="main6">
+            <div>
+                <p style="text-align: justify;">&nbsp;</p>
+                <div class="title-left">
+                    <h2>Tin tức và sự kiện mới</h2>
+                </div>
+                <div class="item-news-left">
+                    <div class="c5"></div>
+                    <div class="img">
+                        <a href="https://langmaster.edu.vn/lich-khai-giang-khoa-hoc.html" target="_blank">
+                            <img src="images3/QC6.jfif" height="100" alt="Khai giảng khóa học tháng 9 năm 2020">
+                        </a>
+                    </div>
+                    <div class="news-name-left">
+                        <a href="https://langmaster.edu.vn/lich-khai-giang-khoa-hoc.html" target="_blank">
+                            <b>Khai giảng khóa học tiếng anh tháng 9 năm 2020</b>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://langmaster.edu.vn/lich-khai-giang-khoa-hoc.html" target="_blank" class="btn-detail">Chi tiết</a>
+                    </div>
+                    <div class="c5"></div>
+                </div>
+            
+                <div class="item-news-left">
+                    <div class="c5"></div>
+                    <div class="img">
+                        <a href="http://quangtritv.vn/tin-tuc-n6050/hoi-thao-dinh-huong-nghe-nghiep-trong-thoi-dai-40.html" target="_blank">
+                            <img src="images3/qc1.png" height="100"  alt ="Hội thảo Tư vấn Định hướng Nghề nghiệp trong thời đại 4.0 ">
+                        </a>
+                    </div>
+                    <div class="news-name-left">
+                        <a href="http://quangtritv.vn/tin-tuc-n6050/hoi-thao-dinh-huong-nghe-nghiep-trong-thoi-dai-40.html" target="_blank">
+                            <b>Hội thảo Tư vấn Định hướng Nghề nghiệp trong thời đại 4.0</b>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://quangtritv.vn/tin-tuc-n6050/hoi-thao-dinh-huong-nghe-nghiep-trong-thoi-dai-40.html" target="_blank" class="btn-detail">Chi tiết</a>
+                    </div>
+                    <div class="c5"></div>
+                </div>
+            
+                <div class="item-news-left">
+                    <div class="c5"></div>
+                    <div class="img">
+                        <a href="https://lophoctiengnhat.com/de-thi-nang-luc-tieng-nhat-jlpt-ky-thi-thang-07-2016-level-n1-n2-n3-n4-n5.html" target="_blank">
+                            <img src="images3/qc3.jpg" height="100" alt="Luyện thi JLPT N4, N3, N2 cùng Sanko">
+                        </a>
+                    </div>
+                    <div class="news-name-left">
+                        <a href="https://lophoctiengnhat.com/de-thi-nang-luc-tieng-nhat-jlpt-ky-thi-thang-07-2016-level-n1-n2-n3-n4-n5.html" target="_blank">
+                            <b>Luyện thi tiếng Nhật JLPT N4, N3, N2 cùng Sanko</b>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://lophoctiengnhat.com/de-thi-nang-luc-tieng-nhat-jlpt-ky-thi-thang-07-2016-level-n1-n2-n3-n4-n5.html" target="_blank" class="btn-detail">Chi tiết</a>
+                    </div>
+                    <div class="c5"></div>
+                </div>
+            
+                <div class="item-news-left">
+                    <div class="c5"></div>
+                    <div class="img">
+                        <a href="https://gec.edu.vn/khai-giang-cac-khoa-hoc-ky-nang.html" target="_blank">
+                            <img src="images3/QC7.jpg" height="100" alt="Khai giảng khóa học kỹ năng tháng 9 năm 2020">
+                        </a>
+                    </div>
+                    <div class="news-name-left">
+                        <a href="https://gec.edu.vn/khai-giang-cac-khoa-hoc-ky-nang.html" target="_blank">
+                            <b>Khai giảng khóa học tháng 9 năm 2020</b>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://gec.edu.vn/khai-giang-cac-khoa-hoc-ky-nang.html" target="_blank" class="btn-detail">Chi tiết</a>
+                    </div>
+                    <div class="c5"></div>
+                </div>
+            
+                <div class="item-news-left">
+                    <div class="c5"></div>
+                    <div class="img">
+                        <a href="https://www.nhatngusanko.com/" target="_blank">
+                            <img src="images3/qc5.jpg" height="100" alt="HỌC TIẾNG NHẬT CÙNG SANKO">
+                        </a>
+                    </div>
+                    <div class="news-name-left">
+                        <a href="https://www.nhatngusanko.com/" target="_blank">
+                            <b>Khai giảng các khóa học tiếng Nhật cùng SANKO</b>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.nhatngusanko.com/" target="_blank" class="btn-detail">Chi tiết</a>
+                    </div>
+                    <div class="c5"></div>
+                </div>
+            </div>
+
+        </div>
+        <!--Live Chat-->
+        <div class="fb-livechat" id="livechat"> 
+            <div class="ctrlq fb-overlay"></div>
+            <div class="fb-widget">
+                 <div class="ctrlq fb-close"></div>
+                 <div class="fb-page" data-href="https://www.facebook.com/topdevvietnam" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+                 <div class="fb-credit">
+                    <a href="https://thanhtrungmobile.vn" target="_blank" rel="sponsored">Powered by TT</a>
+                 </div>
+                 <div id="fb-root"></div>
+            </div>
+            <a href="https://m.me/topdevvietnam" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button">
+                 <div class="bubble">1</div>
+                 <div class="bubble-msg">Bạn cần hỗ trợ?</div>
+            </a>
+        </div>
+
+
+    </body>
+    <footer>
+        <div class="contact">
+            <div class="col50">
+                <img src="images/logo-td.png"/>
+                <h5>373-375 Nguyễn Trọng Tuyển, 
+                Phường 2, Quận Tân Bình, Tp.HCM, Việt Nam</h5>
+                <ul>
+                    <li>Coppyright © CÔNG TY CỔ PHẦN APPLANCER</li>
+                    <li>Liên Hệ: 028 6273 3496</li>
+                    <li>
+                        <a href="mailto:contact@applancer.net">contact@applancer.net</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col25">
+                <h4>Về TopDev</h4>
+                        <ul>
+                        <li>Ứng viên</li>
+                        <li>Tìm kiếm công việc IT</li>
+                        <li>
+                            <a href="https://topdev.vn/operation-regulation">
+                                Quy chế hoạt động của sàn giao dịch thương mại 
+                                điện tử TOPDEV.VN</a>
+                        </li>
+                        <li>Đăng việc làm IT</li>
+                        <li>Tìm kiếm nhân tài</li>
+                        <li>Giải quyết khiếu nại</li>
+                        <li>Tham gia mạng lưới TopdeV</li>
+                    </ul>
+            </div>
+            <div class="col25">
+                <div class="chan">
+                    <div class="title">
+                        <h2 class="display">FOLLOW US</h2>
+                    </div>
+                    <div class="follow">
+                        <div class="icon1">
+                            <i class="fa fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/topdevvietnam"><p>FACEBOOK</p></a>
+                        </div>
+                        <div class="icon1 Twitter">
+                            <i class="fa fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/company/topdev-vn/"><p>LINKEDIN</p></a>
+                        </div>
+                        <div class="icon1 Google">
+                            <i class="fa fa-youtube"></i>
+                            <a href="https://www.youtube.com/channel/UCZedbcmUtab8Y7DEt4ZZv7Q"><p>YOUTUBE</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

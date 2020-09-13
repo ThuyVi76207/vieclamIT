@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tất cả việc làm IT tại Việt Nam</title>
+        <meta charset="utf-8">
+        <link href="CSS/style1.css" rel="stylesheet"/>
+        <link href="images/favicon.ico" rel="shortcut icon"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($){function detectmob(){if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){return true;}else{return false;}}var t={delay: 125, overlay: $(".fb-overlay"), widget: $(".fb-widget"), button: $(".fb-button")}; setTimeout(function(){$("div.fb-livechat").fadeIn()}, 8 * t.delay); if(!detectmob()){$(".ctrlq").on("click", function(e){e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({bottom: 0, opacity: 0}, 2 * t.delay, function(){$(this).hide("slow"), t.button.show()})) : t.button.fadeOut("medium", function(){t.widget.stop().show().animate({bottom: "30px", opacity: 1}, 2 * t.delay), t.overlay.fadeIn(t.delay)})})}});
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#gototop").hide()
+                $(window).scroll(function() {
+                    var t = $(this).scrollTop()
+                    if (t >= 100)
+                        $("#gototop").show(500)
+                    else
+                        $("#gototop").hide(500)
+                });
+            
+                $("#gototop").click(function(){
+                    $('html, body').animate({
+                        'scrollTop': 0
+                    }, 1000)
+                })
+
+                $(document).ready(function() {
+                var aboveHeight = $(header).outerHeight();
+                $(window).scroll(function(){
+                if ($(window).scrollTop() > aboveHeight){
+                $("#sticknav").addClass(fixed).css(top,0).next().css(padding-top,60);
+                } else {
+                $("#sticknav").removeClass(fixed).next().css(padding-top,0);
+                           }
+                });
+
+            });
+                pos = $("#menuTop").position(); 
+                $(window).scroll(function() {
+                    var posScroll= $(document).scrollTop();
+                    if(parseInt(posScroll) > parseInt(pos.top)){
+                        $("#menuTop").addClass('fixed');
+                    }else {
+                        $("#menuTop").removeClass('fixed');
+                    }
+                });
+
+
+        });
+        </script>
+    </head>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/index.html"><img src="images/top.png"/>Việc làm IT hàng đầu</a>
+            </div>
+            <div class="more-icon">
+                <ul class="top">
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-phone-square"></i>
+                                <p>0367884444</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-book"></i>
+                                <p>Thông Tin</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-briefcase"></i>
+                                <p>Đăng tuyển</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Đăng nhập</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <body>
+
+        
+        <div class="gototop" id="gototop">
+            <a href="javascript:;" onclick="gototop()">^</a>
+        </div>
+        <div class="myHeader" id="menuTop">
+          <ul class="menu">
+              <li><a href="http://127.0.0.1:5500/index.html" target="_blank">Trang Chủ</a></li>
+                    <li><a href="http://127.0.0.1:5500/index1.html">Tìm việc IT</a></li>
+                    <li><a href="#">Sự Kiện</a>
+                        <ul class="submenu">
+                            <li><a href="https://mobileday.vn/" target="_blank">VietNam Mobile Day</a></li>
+                            <li><a href="https://vietnamwebsummit.com/vi/trang-chu/" target="_blank">VietNam Web Submit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/index3.html" target="_blank">Cuộc sống IT</a></li>
+                    <li><a href="http://127.0.0.1:5500/index4.html" target="_blank">Tạo CV</a></li>
+                    <li><a href="http://127.0.0.1:5500/index5.html" target="_blank">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="images">
+            <h2><img src="images/background.jfif"/>
+                Review lương bổng, đãi ngộ, HR, tuyển dụng, sếp và công việc,... gì cũng có
+            </h2>
+        </div>
+
+        <section style="width: 80%; margin: auto;" >
+            <div class="Box">
+                <div class="Search">
+                    <div class="content">
+                        <table style="width: 100%">
+                            <td style="width: 60%">
+                                <input style="width: 90%; height: 25px;" type="text" placeholder="Nhập từ khóa tìm kiếm"/>
+                                <td style="width: 25%">
+                                    <select style="width: 90%; height: 25px;">
+                                        <option>Tất cả địa điểm</option>
+                                        <option>Hồ Chí Minh</option>
+                                        <option>Hà Nội</option>
+                                        <option>Đà Nẵng</option>
+                                    </select>
+                                    <td style="width: 10%">
+                                        <input style="width:90%; height: 25px;" type="button" value="Tìm Kiếm"/>
+                                    </td>
+                                </td>
+                            </td>
+                       </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="left">            
+                <div class="new">
+                <img src="images/momo.png">
+                <a href="https://topdev.vn/viec-lam/senior-business-analyst-momo-2-2012926">
+                    SENIOR BUSINESS ANALYST</a>
+                <p>Formulates and defines system scope and objectives through research and fact-finding
+                     combined with an understanding of applicable business systems and industry requirements.
+                    Devises or modifies procedures to solve complex problems considering computer equipment capacity 
+                    and limitations, operation time and form of desired results.
+                </p>
+                </div>
+                <div class="new">
+                    <img src="images/SSI.png">
+                    <a href="https://topdev.vn/viec-lam/mobile-application-developer-ssi-securities-corporation-2-2012992">
+                        Mobile Application Developer</a>
+                    <p>You will be helping create a game platform that converts Unity3D games into HTML5 to help publish our games 
+                        to millions of other people all over the world...
+                        Bonuses.
+                        Stock Ownership Options.
+                        Catered Dinners.
+                    </p>
+                </div>
+                <div class="new">
+                    <img src="images/Chipo.png">
+                    <a href="https://topdev.vn/viec-lam/java-developer-chipo-2-2011938">
+                        Java Developer</a>
+                    <p>Là thành viên của Product Team, tham gia phát triển hệ thống phần mềm, các chức năng, module mới.
+                        Nghiên cứu các giải pháp để giải quyết vấn đề trong quá trình thiết kế và phát triển dự án
+                        .Thiết kế cơ sở dữ liệu dựa trên các thông số kĩ thuật đã được phân tích
+                        .Tham gia xây dựng sản phẩm trên nền web
+                    </p>
+                </div>
+                    <div class="new">
+                        <img src="images/Ymese.png">
+                        <a href="https://topdev.vn/viec-lam/senior-full-stack-php-developer-ymese-2-2012995">
+                            Senior Full-stack PHP Developer</a>
+                        <p>Plan, develop, test and maintain major features for our main plugins and extensions 
+                            Review, optimize, and refactor existing codes with other team members.
+                            Troubleshoot customer’s reported bugs and issue as well as coming up with good solutions.
+                        </p>
+                    </div>
+                <div class="new">
+                        <img src="images/ACB.png">
+                        <a href="https://topdev.vn/viec-lam/it-governance-risk-compliance-it-auditor-ngan-hang-a-chau-acb-2017465">
+                            IT Governance Risk Compliance/ IT Auditor</a>
+                        <p>NGÂN HÀNG Á CHÂU (ACB)
+                            Quận 3, Hồ Chí Minh. Các chế độ thưởng cho cán bộ trong các dịp lễ tết, 
+                            bổ sung quỹ thu nhập 6 tháng đầu năm và đầy đủ cá...
+                            Cung cấp trang thiết bị tối ưu, không gian làm việc yên tĩnh phù hợp cho cán bộ nhân viên</p>
+                </div>
+                <div class="new">
+                    <img src="images/Haribo.png">
+                    <a href="https://topdev.vn/viec-lam/senior-full-stack-developer-reactjs-php-java-hanbiro-2-2013065">
+                        Senior Full-stack Developer (ReactJS, PHP, Java)</a>
+                    <p>13th salary, bonus and Increase salary based on your performance.
+                        Only work from Monday to Friday and 8 hours/ a day
+                        12 annual leaves
+                    </p>
+                </div>
+                <div class="new">
+                    <img src="images/tech.png">
+                    <a href="https://topdev.vn/viec-lam/java-developer-seniorexpert-level-techcombank-2-2016213">
+                        Java Developer (Senior/Expert level)</a>
+                    <p>Write and develop clean codes to develop functional mobile/web applications
+                        Actively troubleshoot and debug applications
+                        Perform UI tests to optimize performance
+                        Collaborate with Front End Developers to integrate user-facing elements with server-side
+                         logic and other applications APIs.
+                    </p>
+                </div>
+                <div class="new">
+                    <img src="images/Filum-Logo-1-yOlma.png">
+                    <a href="https://topdev.vn/viec-lam/full-stack-software-engineer-filum-ai-2-2010885">
+                        Full-stack Software Engineer</a>
+                    <p>Filum is a small but amazing tech startup that is building a Business Data Platform that 
+                        helps companies making data-driven business decisions...
+                        Silicon Valley-style work culture: move fast, break things, make mistakes, learn quick, and grow
+                        Extremely data-driven and process-driven in every company’s activity
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Tiêu điểm</h2>
+                <div class="container2">
+                    <div class="product">
+                        <img src="images/logo2.jpg" rel="images">
+                        <a href="#">DAC Vietnam</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/Techcombank-image-1.jpg" rel="images">
+                        <a href="#">Secomm</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/seoul.png" rel="images">
+                        <a href="#">Korean IT</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/logo.jpg" rel="images">
+                        <a href="#">Data Sience</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Live Chat-->
+        <div class="fb-livechat" id="livechat"> 
+            <div class="ctrlq fb-overlay"></div>
+            <div class="fb-widget">
+                 <div class="ctrlq fb-close"></div>
+                 <div class="fb-page" data-href="https://www.facebook.com/topdevvietnam" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+                 <div class="fb-credit">
+                    <a href="https://thanhtrungmobile.vn" target="_blank" rel="sponsored">Powered by TT</a>
+                 </div>
+                 <div id="fb-root"></div>
+            </div>
+            <a href="https://m.me/topdevvietnam" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button">
+                 <div class="bubble">1</div>
+                 <div class="bubble-msg">Bạn cần hỗ trợ?</div>
+            </a>
+        </div>
+        <footer>
+            <div class="contact">
+                <div class="col50">
+                    <img src="images/logo-td.png"/>
+                    <h4>373-375 Nguyễn Trọng Tuyển, 
+                    Phường 2, Quận Tân Bình, Tp.HCM, Việt Nam</h4>
+                        <ul>
+                        <li>Coppyright © CÔNG TY CỔ PHẦN APPLANCER</li>
+                        <li>Liên Hệ: 028 6273 3496</li>
+                        <li>
+                            <a href="mailto:contact@applancer.net">contact@applancer.net</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col25">
+                    <h4>Về TopDev</h4>
+                            <ul>
+                            <li>Ứng viên</li>
+                            <li>Tìm kiếm công việc IT</li>
+                            <li>
+                                <a href="https://topdev.vn/operation-regulation">
+                                    Quy chế hoạt động của sàn giao dịch thương mại 
+                                    điện tử TOPDEV.VN</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col25">
+                    <h4>Nhà Tuyển Dụng</h4>
+                        <ul>
+                            <li>Đăng việc làm IT</li>
+                            <li>Tìm kiếm nhân tài</li>
+                            <li>Giải quyết khiếu nại</li>
+                            <li>Tham gia mạng lưới TopdeV</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
